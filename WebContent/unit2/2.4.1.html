@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	window.a = 1;
+	// 浏览器中顶层对象为window,顶层对象的属性相当于全局变量
+	console.log(a);
+	var b = 2;
+	console.log(window.b);
+	let c = 3;
+	// es6规定,var和function声明的全局变量依旧是顶层对象的属性,而let,const,class声明的变量不是.
+	console.log(window.c);
+	// 顶层变量和全局变量关联引发了问题: 1.无法在编译时发现变量未声明 2.容易创建全局变量[比如写错单词] 3.顶层对象属性随处可读写不利于模块化编程 4.window有实体含义,指浏览器窗口对象
+</script>
+</head>
+<body>
+
+</body>
+</html>
