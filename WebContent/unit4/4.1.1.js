@@ -1,6 +1,7 @@
 let a = '\u0061';
 // js可以使用 \u + xxxx 表示字符,xxxx表示Unicode码.但是这种表示仅限于\u0000~\uFFFF,超出范围需要使用2个字节表示
 console.log(a);
+// 本章的特殊字符可能在CMD无法打印,可在浏览器console操作
 let b = '\uD842\uDFBB';
 console.log(b);
 
