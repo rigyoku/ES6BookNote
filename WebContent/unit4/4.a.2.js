@@ -23,8 +23,8 @@ let str = 'console.log(`Print ${name}`)';
 let fun = new Function('name', str);
 fun('ly');
 
-// 调用模板字符串,*第一个str2会报错
-//let str2 = 'function(name) {return `Print ${name}`}';
-let str2 = '(name) => `Print ${name}`';
+// 调用模板字符串,字符串内写方法需要使用小括号括起来
+let str2 = '(function(name) {return `Print ${name}`})';
+//let str2 = '(name) => `Print ${name}`';
 let func2 = eval.call(null, str2);
 console.log(func2('LY'));
