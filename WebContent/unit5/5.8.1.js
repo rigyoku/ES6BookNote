@@ -20,3 +20,8 @@ console.log(/(?<!y)[\S]x/g.exec('dxaybxc'));
 console.log(/(\d+)(\d+)$/g.exec('12034'));
 // 后行断言,从右到左执行,这里的第二个括号是贪婪模式,第一个括号匹配到一个字符
 console.log(/(?<=(\d+)(\d+))$/g.exec('12034'));
+
+// \1表示第一个匹配子项
+// 后行断言是从左到右扫描,发现匹配再从右到左完成反斜杠引用.*反斜杠引用需要放在括号之前
+console.log(/(?<=(o)d\1)r/.exec('hodor'));
+console.log(/(?<=\1d(o))r/.exec('hodor'));
