@@ -13,3 +13,10 @@
 6.7
 	6.7.1	Math的trunc/sign/cbrt方法
 	6.7.2	Math的clz32/imul/fround
+	6.7.3	Math的hypot/指数/双曲函数
+6.8
+	6.8.1	es6的signbit提案
+6.9
+	6.9.1	es6的指数运算符
+6.a
+	6.a.1	es6的Integer类型提案
