@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../lib/jquery-3.4.1.js"></script>
+<script type="text/javascript">
+
+// 递归优化的实现
+let tco = function (f) {
+	var value;
+	var active = false;
+	var accumulated = [];
+	return function accumulator() {
+		accumulated.push(arguments);
+		if (!active) {
+			active = true;
+			while (accumulated.length) {
+				value = f.apply(this, accumulated.shift());
+				// console.log('temp value : ' + value);
+			}
+			active = false;
+			return value;
+		}
+	}
+}
+
+let f1 = function (x, y = 1) {
+	if (x < 1) return y;
+	y *= x;
+	return f2(x - 1, y);
+}
+let f2 = tco(f1);
+console.log(f2(3));
+
+// 默认状态为false,开始递归记录参数,状态改为true.
+// 参数有值,开始循环.
+// 使用参数调用递归方法并移除对应参数,进入递归条件,再次调用tco返回的函数记录参数,此时状态为true直接结束方法.
+// 由于上一步移除并重新记录了参数,参数有值,继续进行循环,使用新参数调用并移除参数
+// ...
+// 调用并移除参数后,没有进入递归条件,返回结果value,由于参数移除,循环结束,返回value
+</script>
+</head>
+<body>
+
+</body>
+</html>
