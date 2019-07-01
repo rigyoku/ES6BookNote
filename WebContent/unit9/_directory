@@ -15,5 +15,12 @@
 9.7
 	9.7.1	属性的遍历
 9.8
-	9.8.1	
-	
+	9.8.1	__proto__属性
+	9.8.2	Object.setPrototypeOf
+	9.8.3	Object.getPrototypeOf
+9.9
+	9.9.1	Object.keys
+	9.9.2	Object.values
+	9.9.3	Object.entries
+9.a
+	9.a.1	对象的扩展运算符和解构应用
