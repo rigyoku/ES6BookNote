@@ -28,4 +28,4 @@
 	9.b.1	Object.getOwnPropertyDescriptors来复制对象或克隆对象
 	9.b.2	Object.getOwnPropertyDescriptors继承对象和混入
 9.c
-	9.c.1	
+	9.c.1	Null传导运算符
