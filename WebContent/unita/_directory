@@ -11,4 +11,6 @@
 10.6
 	10.6.1	模块的单例
 10.7
-	10.7.1	内部Symbol:hasInstance/isConcatSpreadable/*species
+	10.7.1	内部Symbol:hasInstance/isConcatSpreadable/species
+	10.7.2	内部Symbol:match/replace/search/split
+	10.7.3	内部Symbol:iterator/toPrimitive/toStringTag/unscopables

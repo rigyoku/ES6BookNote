@@ -26,18 +26,15 @@ console.log([0].concat(arr2));
 // 数组默认可展开[isConcatSpreadable是true或者undefined可展开],对象默认不可展开
 // 对于一个类而言,Symbol.isConcatSpreadable必须写成实例的属性,即写在构造方法中
 
-// Symbol.species方法,*指向当前对象的构造函数.使用该方法返回值作为构造函数创建对象
-class Test2 {
-	constructor() {
-		console.log('c');
-		return {a: 1};
-	}
+// Symbol.species方法,指向当前对象的构造函数.使用该方法返回值作为构造函数创建对象. 这里的Symbol.species替换了map方法返回的构造方法,将类型从Test2改成了Array
+class Test2 extends Array{
 	static get [Symbol.species]() {
 		console.log('s');
-		return function() {
-			console.log('ss');
-			return {a: 2};
-		}
+		return Array;
 	}
 }
-let obj2 = new Test2();
+let obj2 = new Test2(1, 2, 3);
+console.log('--');
+let arr3 = obj2.map(x => x * x);
+console.log(arr3 instanceof Test2);
+console.log(arr3 instanceof Array);
