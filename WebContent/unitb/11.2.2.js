@@ -7,6 +7,8 @@ let ws2 = new WeakSet(arr2);
 // weakset有3个操作方法 add/delete/has
 let a = {a:1};
 ws2.add(a);
+// weakset不能添加null成员
+//ws2.add(null);
 // weakset不能遍历,没有size属性
 console.log(ws2);
 console.log(ws2.has(a));

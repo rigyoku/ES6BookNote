@@ -2,7 +2,7 @@ let map = new Map();
 // 使用set方法,添加键和值
 map.set('a', 1);
 // map的set方法返回map本身,所以可以使用链式写法
-map.set('b', 2).set(undefined, 3);
+map.set('b', 2).set(undefined, 3).set(null, 4);
 // map的size属性,返回成员数
 console.log(map.size);
 // map的get方法,返回键对应的值,取不到值返回undefined

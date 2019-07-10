@@ -10,3 +10,5 @@
 	11.3.2	map的操作方法 set / get / has / delete / clear 和 size 属性
 	11.3.3	map的遍历
 	11.3.4	map转成其他结构
+11.4
+	11.4.1	weakmap类型,方法和用途
