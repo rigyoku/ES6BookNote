@@ -5,3 +5,8 @@
 	12.2.2	set
 	12.2.3	apply
 	12.2.4	has
+	12.2.5	construct
+	12.2.6	deleteProperty
+	12.2.7	defineProperty / getOwnPropertyDescriptor
+	12.2.8	getPrototypeOf
+	12.2.9	isExtensible
