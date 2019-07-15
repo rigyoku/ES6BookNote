@@ -10,3 +10,6 @@
 	12.2.7	defineProperty / getOwnPropertyDescriptor
 	12.2.8	getPrototypeOf
 	12.2.9	isExtensible
+	12.2.a	ownKeys
+	12.2.b	preventExtensions
+	12.2.c	setPrototypeOf
