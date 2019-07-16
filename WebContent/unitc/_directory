@@ -13,3 +13,9 @@
 	12.2.a	ownKeys
 	12.2.b	preventExtensions
 	12.2.c	setPrototypeOf
+12.3
+	12.3.1	Proxy.revocable取消代理
+12.4
+	12.4.1	this问题
+12.5
+	12.5.1	用途
