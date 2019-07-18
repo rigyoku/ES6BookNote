@@ -3,3 +3,6 @@
 13.2
 	13.2.1	get / set
 	13.2.2	has / deleteProperty / construct / getPrototypeOf / setPrototypeOf
+	13.2.3	apply / defineProperty / getOwnPropertyDescriptor / isExtensiable / preventExtensions / ownKeys
+13.3
+	13.3.1	proxy实现观察者模式
