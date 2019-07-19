@@ -1,2 +1,6 @@
 14.1
 	14.1.1	promise对象
+14.2
+	14.2.1	promise用法
+14.3
+	14.3.1	Promise.prototype.then

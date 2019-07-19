@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//使用promise实现AJAX请求
+let getInfo = function() {
+	return new Promise(function(resolve, reject) {
+		let url = 'http://localhost:8080';
+		let request = new XMLHttpRequest();
+		request.open('GET', url);
+		request.onreadystatechange = function() {
+			if (this.status === 200) {
+				resolve(this.response);
+			} else {
+				reject(this.response);
+			}
+		}
+		request.setRequestHeader('Accept', 'application');
+		request.responseType = 'json';
+		request.send();
+	})
+}
+getInfo().then(function(res) {
+	console.log(`success response : ${res}`);
+}, function(res) {
+	console.log(`fail response : ${res}`);
+})
+</script>
+</head>
+<body>
+
+</body>
+</html>
