@@ -16,3 +16,9 @@
 	14.8.1	Promise.reject
 14.9
 	14.9.1	done扩展
+	14.9.2	finally扩展
+14.a
+	14.a.1	加载图片
+	14.a.2	于generator函数结合
+14.b
+	14.b.1	Promise.try
