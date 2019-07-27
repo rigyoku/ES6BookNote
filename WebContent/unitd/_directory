@@ -1,5 +1,5 @@
 13.1
-	13.1.1	Relect对象
+	13.1.1	Reflect对象
 13.2
 	13.2.1	get / set
 	13.2.2	has / deleteProperty / construct / getPrototypeOf / setPrototypeOf
