@@ -6,3 +6,5 @@
 	16.2.1	next方法的参数
 16.3
 	16.3.1	for...of循环
+16.4
+	16.4.1	Generator.prototype.throw
