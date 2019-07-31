@@ -13,3 +13,10 @@
 16.6	
 	16.6.1	yield*表达式
 	16.6.2	yield*的return和应用
+16.7
+	16.7.1	generator函数作为属性
+16.8
+	16.8.1	generator函数的this
+16.9
+	16.9.1	generator函数和状态机
+	16.9.2	generator函数与协程
