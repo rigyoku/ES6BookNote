@@ -20,3 +20,8 @@
 16.9
 	16.9.1	generator函数和状态机
 	16.9.2	generator函数与协程
+16.a
+	16.a.1	generator函数与异步操作
+	16.a.2	generator函数控制流管理
+	16.a.3	generator函数部署iterator接口
+	16.a.4	generator函数作为数据结构

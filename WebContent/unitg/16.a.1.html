@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<title>Insert title here</title>
+<script type="text/javascript">
+//调用ajax完成异步操作
+let getData = function* () {
+	let data = yield ajax();
+	console.log(`Data: ${data}`);
+}
+let ajax = function () {
+	let a = new XMLHttpRequest();
+	a.open("GET","https://www.baidu.com",true);
+	a.send();
+	a.onreadystatechange = function() {
+		gd.next(a.responseText)
+	}
+}
+let gd = getData();
+gd.next();
+</script>
+</head>
+<body>
+
+</body>
+</html>
