@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+let gen = function* () {
+	let res = yield fetch('http://localhost:8080/');
+	console.log(`RES: ${res}`);
+}
+let g = gen();
+g.next().value.then(function (data) {
+	console.log('DONE');
+	console.log(data);
+	return data.json();
+}).then(function (json) {
+	g.next(json);
+})
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>
