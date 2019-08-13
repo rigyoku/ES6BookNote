@@ -14,3 +14,13 @@
 	19.7.1	私有方法
 19.8
 	19.8.1	私有属性
+19.9
+	19.9.1	this指向
+19.a
+	19.a.1	name属性
+19.b	
+	19.b.1	class的setter和getter
+19.c
+	19.c.1	class的generator方法
+19.d
+	19.d.1	class的静态方法
