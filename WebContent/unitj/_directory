@@ -24,3 +24,8 @@
 	19.c.1	class的generator方法
 19.d
 	19.d.1	class的静态方法
+19.e
+	19.e.1	class的实例属性
+	19.e.2	class的静态属性
+19.f
+	19.f.1	new.target属性
