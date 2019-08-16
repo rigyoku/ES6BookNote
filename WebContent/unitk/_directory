@@ -1,4 +1,12 @@
 20.1
-	20.1.1	*class的继承和getPrototypeOf
+	20.1.1	class的继承和getPrototypeOf
 20.2
 	20.2.1	super关键字
+20.3
+	20.3.1	类的prototype属性和__proto__属性
+20.4
+	20.4.1	extends的继承目标
+	20.4.2	实例的__proto__属性
+20.5
+	20.5.1	es5原生构造函数的继承
+	20.5.2	es6原生构造函数的继承
