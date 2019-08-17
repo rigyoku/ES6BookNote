@@ -18,3 +18,9 @@ a[0] = 'ly';
 console.log(a.length);
 console.log(a[0]);
 // 这是因为es5实现继承是先创建子类再去用父类apply像子类实例添加父类方法,但是原生构造函数会忽略apply方法导致内部属性无法被继承
+
+let o = {};
+Error.call(o);
+// 使用call并没有使对象o获得Error的属性,而是返回新对象
+console.log(Object.getOwnPropertyNames(Error.call(o)));
+console.log(Object.getOwnPropertyNames(o));
