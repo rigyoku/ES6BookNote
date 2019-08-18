@@ -1,0 +1,1 @@
+// core-decorators.js是一个第三方模块,提供了几个常见修饰器
