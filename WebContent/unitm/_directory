@@ -6,3 +6,9 @@
 	22.3.1	export命令
 22.4
 	22.4.1	import命令
+22.5
+	22.5.1	模块的整体加载
+22.6
+	22.6.1	export default命令
+22.7
+	22.7.1	export和import的复合写法
