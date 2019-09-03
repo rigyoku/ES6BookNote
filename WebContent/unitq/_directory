@@ -3,3 +3,6 @@
 	26.1.2	ArrayBuffer.prototype.byteLength/ArrayBuffer.prototype.slice/ArrayBuffer.isView
 26.2
 	26.2.1	TypedArray概述
+	26.2.2	构造函数
+	26.2.3	数组方法
+	26.2.4	字节序
