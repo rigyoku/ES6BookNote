@@ -9,3 +9,9 @@
 	26.2.5	BYTE_PER_ELEMENT属性
 	26.2.6	ArrayBuffer和字符串的转换
 	26.2.7	溢出
+	26.2.8	TypedArray.prototype.buffer/byteLength/byteOffset/length
+	26.2.9	TypedArray.prototype.set/subarray/slice/of/from
+26.3
+	26.3.1	复合视图
+26.4
+	26.4.1	DataView视图

@@ -1,0 +1,9 @@
+// DataView视图也是复合视图
+// 在设计时TypedArray倾向于网卡声卡之类本机数据传递,使用本机字节序;DataView倾向于处理网络数据,可以设定字节序.
+// DataView也是一个构造函数,接收ArrayBuffer用来生成视图.和TypedArray类似也可以指定开始位置和长度
+// DataView也有buffer/byteLength/byteOffset属性
+// DataView提供8种读取方式
+// getInt8/getUint8/getInt16/getUint16/getInt32/getUint32/getFloat32/getFloat64
+// 8种读取方式都是接收一个字节序号作为参数,读取该位字节.不能是负数,否则报错.
+// 一次读取2个及以上的字节,必须明确数据存储方式[大端还是小端].默认使用大端字节序读取数据.使用小端读取需要在第二个参数指定true
+// 对应get也有8个set方法,接收3个参数,分别是起点位置,写入的数据,存储方式[false/undefined是大端字节序,true是小端字节序]
