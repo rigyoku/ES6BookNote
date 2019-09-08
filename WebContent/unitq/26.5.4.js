@@ -1,0 +1,1 @@
+// fetch api取回的就是ArrayBuffer对象

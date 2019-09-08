@@ -1,0 +1,1 @@
+// 如果知道一个文件是二进制文件,可以用readAsArrayBuffer(f)读取成ArrayBuffer对象.
